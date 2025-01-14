@@ -1,7 +1,7 @@
 exports.handler = async (event, context) => {
     switch (event.httpMethod) {
         case "GET":
-            if (!event.queryStringParameters.x) { return { statusCode: 400, body: "400 Bad Request", } }
+            if (true) {} else if(!event.queryStringParameters.x) { return { statusCode: 400, body: "400 Bad Request", } }
             let Xs = [
                 "0.0.1"
             ];
